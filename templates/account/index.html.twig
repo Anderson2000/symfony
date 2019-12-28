@@ -1,0 +1,15 @@
+{% extends 'app.html.twig' %}
+
+{% block title %}Update{% endblock %}
+
+{% block content %}
+    <h1>Update Profile</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.username) }}
+    {{ form_row(form.plainPassword) }}
+
+    <button class="btn">Update</button>
+    {{ form_end(form) }}
+{% endblock %}
