@@ -20,7 +20,6 @@ class LoginForm extends AbstractType
     {
         $builder
             ->add('email', EmailType::class)
-            ->add('username', TextType::class)
             ->add('password', PasswordType::class);
     }
 
